@@ -9,9 +9,9 @@ on:
   # Automated builds now include automatic certificate update - the nuke certs part of that process could
   #   affect other OS apps if run simultaneously.
   # Each OS needs a time of day distinct from other apps, LoopCaregiver uses 13 every Wed and 11 every 1st of month
-  schedule:
-    - cron: "0 13 * * 3" # Checks for updates at 09:00 UTC every Wednesday
-    - cron: "0 11 1 * *" # Builds the app on the 1st of every month at 07:00 UTC
+  #schedule:
+  #  - cron: "0 13 * * 3" # Checks for updates at 09:00 UTC every Wednesday
+  #  - cron: "0 11 1 * *" # Builds the app on the 1st of every month at 07:00 UTC
 
 env:
   UPSTREAM_REPO: LoopKit/LoopCaregiver
